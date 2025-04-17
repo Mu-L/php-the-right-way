@@ -9,10 +9,10 @@ macOS 12 (Monterey) and later does not come prepackaged with PHP. Earlier macOS 
 
 ### Install PHP via Homebrew
 
-[Homebrew] is a package manager for macOS that helps you easily install PHP and various extensions. The Homebrew core repository provides "formulae" for PHP 7.4, 8.0, 8.1, 8.2 and PHP 8.3. Install the latest version with this command:
+[Homebrew] is a package manager for macOS that helps you easily install PHP and various extensions. The Homebrew core repository provides "formulae" for PHP 8.1, 8.2, 8.3 and 8.4. Install the latest version with this command:
 
 ```
-brew install php@8.3
+brew install php
 ```
 
 You can switch between Homebrew PHP versions by modifying your `PATH` variable. Alternatively, you can use [brew-php-switcher][brew-php-switcher] to switch PHP versions automatically.
