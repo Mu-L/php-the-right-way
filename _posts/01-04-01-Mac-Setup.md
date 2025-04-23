@@ -5,14 +5,14 @@ anchor:  mac_setup
 
 ## macOS Setup {#mac_setup_title}
 
-macOS comes prepackaged with PHP but it is normally a little behind the latest stable release. There are multiple ways to install the latest PHP version on macOS.
+macOS 12 (Monterey) and later does not come prepackaged with PHP. Earlier macOS versions include PHP but are behind the latest stable release. There are multiple ways to install the latest PHP version on macOS.
 
 ### Install PHP via Homebrew
 
-[Homebrew] is a package manager for macOS that helps you easily install PHP and various extensions. The Homebrew core repository provides "formulae" for PHP 7.4, 8.0, 8.1 and PHP 8.2. Install the latest version with this command:
+[Homebrew] is a package manager for macOS that helps you easily install PHP and various extensions. The Homebrew core repository provides "formulae" for PHP 8.1, 8.2, 8.3 and 8.4. Install the latest version with this command:
 
 ```
-brew install php@8.2
+brew install php
 ```
 
 You can switch between Homebrew PHP versions by modifying your `PATH` variable. Alternatively, you can use [brew-php-switcher][brew-php-switcher] to switch PHP versions automatically.
@@ -21,12 +21,12 @@ You can also switch between PHP versions manually by unlinking and linking the w
 
 ```
 brew unlink php
-brew link --overwrite php@8.1
+brew link --overwrite php@8.2
 ```
 
 ```
 brew unlink php
-brew link --overwrite php@8.2
+brew link --overwrite php@8.3
 ```
 
 ### Install PHP via Macports
@@ -40,14 +40,14 @@ MacPorts supports pre-compiled binaries, so you don't need to recompile every
 dependency from the source tarball files, it saves your life if you don't
 have any package installed on your system.
 
-At this point, you can install `php54`, `php55`, `php56`, `php70`, `php71`, `php72`, `php73`, `php74`, `php80`, `php81`  or `php82` using the `port install` command, for example:
+At this point, you can install `php54`, `php55`, `php56`, `php70`, `php71`, `php72`, `php73`, `php74`, `php80`, `php81`, `php82` or `php83` using the `port install` command, for example:
 
     sudo port install php74
-    sudo port install php82
+    sudo port install php83
 
 And you can run `select` command to switch your active PHP:
 
-    sudo port select --set php php82
+    sudo port select --set php php83
 
 ### Install PHP via phpbrew
 
