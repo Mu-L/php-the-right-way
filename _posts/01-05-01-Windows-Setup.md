@@ -11,7 +11,7 @@ PHP from anywhere.
 
 For learning and local development, you can use the [built-in webserver](/#builtin_web_server_title) with PHP 5.4+ so
 you don't need to worry about configuring it. If you would like an "all-in-one" which includes a full-blown webserver
-and MySQL too then tools such as the [EasyPHP][easyphp], [OpenServer][openserver] or [WampServer][wamp] will help get a 
+and MySQL too, then tools such as the [EasyPHP][easyphp], [OpenServer][openserver] or [WampServer][wamp] will help get a 
 Windows development environment up and running fast. That said, these tools will be a little different from 
 production so be careful of environment differences if you are working on Windows and deploying to Linux.
 
